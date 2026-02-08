@@ -1,178 +1,206 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<title>For My Babe ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin:0;
+    font-family: Arial,sans-serif;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+.card {
+    background: rgba(255,255,255,0.15);
+    padding:30px;
+    border-radius:20px;
+    max-width:420px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    z-index:2;
+    position:relative;
+}
+h1{font-size:28px;}
+p{font-size:18px;line-height:1.6;}
+button{
+    margin:10px;
+    padding:12px 22px;
+    font-size:16px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    position:relative;
+    transition: transform 0.2s;
+}
+.yes{background:#ffffff;color:#ff4f81;}
+.no{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+    position:absolute;
+}
+.heart{font-size:45px;animation:beat 1s infinite;}
+@keyframes beat{0%,100%{transform:scale(1);}50%{transform:scale(1.25);}}
+.floating-heart{
+    position:absolute;
+    bottom:-20px;
+    font-size:20px;
+    animation:floatUp linear infinite;
+    opacity:0.8;
+}
+@keyframes floatUp{
+    0%{transform:translateY(0) scale(1);opacity:1;}
+    100%{transform:translateY(-110vh) scale(1.5);opacity:0;}
+}
+/* Firework circles */
+.firework{
+    position:absolute;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    pointer-events:none;
+}
+/* Ring animation */
+.ring {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 4px solid gold;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    box-shadow: 0 0 20px gold, 0 0 40px gold, 0 0 60px gold;
+    animation: ringPop 1s forwards;
+}
+@keyframes ringPop {
+    0% { transform: translate(-50%, -50%) scale(0); }
+    50% { transform: translate(-50%, -50%) scale(1.5); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+</style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;For My Babe ❤️&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #ff5f6d, #ffc371);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.15);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 420px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 40px rgba(0,0,0,0.3);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 2;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 { font-size: 28px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>p { font-size: 18px; line-height: 1.6; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 22px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.yes { background: #ffffff; color: #ff4f81; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.no {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.heart { font-size: 45px; animation: beat 1s infinite; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes beat {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>0%, 100% { transform: scale(1); }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>50% { transform: scale(1.25); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.floating-heart {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>bottom: -20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: floatUp linear infinite;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.8;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes floatUp {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>0% { transform: translateY(0) scale(1); opacity: 1; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body onclick="startExperience()"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="card" id="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Hey Babe ❤️&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Babe, you are not just someone I love, <span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>you are my happiness, my peace, and my forever.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Will you be mine forever? 💍&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="yes" onclick="yesClicked()"&gt;Yes Babe 💖&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="no" id="noBtn"&gt;No 🙈&lt;/button&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;audio id="bgMusic" loop&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"&gt;</p>
-<p class="p1">&lt;/audio&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let musicPlayed = false;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let heartsStarted = false;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function startExperience() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (!musicPlayed) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("bgMusic").play();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>musicPlayed = true;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (!heartsStarted) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>setInterval(createHeart, 400);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>heartsStarted = true;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function yesClicked() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("card").innerHTML = `</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Yayyy!!! 😍❤️&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Babe, you just made me the happiest person alive.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>I promise to love you, support you, and stand by you forever.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Love you always 💖&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;— Rahul&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="heart"&gt;❤️&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* RUNAWAY No button – super tricky */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const noBtn = document.getElementById("noBtn");</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>let jumpDistance = 100;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>noBtn.addEventListener("mouseover", moveButton);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>noBtn.addEventListener("click", moveButton);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function moveButton() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Randomize X/Y positions within window bounds</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const cardRect = document.getElementById("card").getBoundingClientRect();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const btnRect = noBtn.getBoundingClientRect();</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const maxX = window.innerWidth - btnRect.width;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const maxY = window.innerHeight - btnRect.height;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>let x = Math.random() * maxX;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let y = Math.random() * maxY;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>noBtn.style.transform = `translate(${x - btnRect.left}px, ${y - btnRect.top}px)`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Increase jump distance for next time (optional for more fun)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>jumpDistance += 20;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Floating hearts */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function createHeart() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const heart = document.createElement("div");</p>
-<p class="p1"><span class="Apple-converted-space">        </span>heart.classList.add("floating-heart");</p>
-<p class="p1"><span class="Apple-converted-space">        </span>heart.innerHTML = "❤️";</p>
-<p class="p1"><span class="Apple-converted-space">        </span>heart.style.left = Math.random() * 100 + "vw";</p>
-<p class="p1"><span class="Apple-converted-space">        </span>heart.style.animationDuration = (4 + Math.random() * 3) + "s";</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.body.appendChild(heart);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(() =&gt; heart.remove(), 7000);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body onclick="startExperience()">
+
+<div class="card" id="card">
+    <h1> Babe 😘❤️</h1>
+    <p>Babe, you make my world brighter 💖</p>
+    <h2>Will you be mine forever? 💍</h2>
+    <button class="yes" onclick="yesClicked()">Yes Babe 💖</button>
+    <button class="no" id="noBtn">No 🙈</button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let musicPlayed=false;
+let heartsStarted=false;
+
+function startExperience(){
+    if(!musicPlayed){
+        document.getElementById("bgMusic").play();
+        musicPlayed=true;
+    }
+    if(!heartsStarted){
+        setInterval(createHeart,400);
+        heartsStarted=true;
+    }
+}
+
+function yesClicked(){
+    const card=document.getElementById("card");
+    card.innerHTML=`
+        <h1>Yay!!! 😍❤️</h1>
+        <p>Babe,you made me the happiest person alive 💖</p>
+        <h2>I Love you forever ❤️</h2>
+        <div class="heart">❤️</div>
+    `;
+    createFireworks();
+    createRing();
+}
+
+/* Ring animation */
+function createRing(){
+    const ring=document.createElement("div");
+    ring.classList.add("ring");
+    document.body.appendChild(ring);
+    setTimeout(()=>ring.remove(),2000);
+}
+
+/* No button logic */
+const noBtn=document.getElementById("noBtn");
+const noMessages=[
+    "Aww Babe 😢, try again!",
+    "Come on, you know you want to 😘",
+    "No? Babe, I'm heartbroken 💔",
+    "Not yet? My heart is doing somersaults 😍",
+    "Babe, don’t make me beg 😄💖"
+];
+let noCount=0;
+
+noBtn.addEventListener("mouseover",moveButton);
+noBtn.addEventListener("click",moveButton);
+
+function moveButton(){
+    const btnRect=noBtn.getBoundingClientRect();
+    const maxX=window.innerWidth-btnRect.width;
+    const maxY=window.innerHeight-btnRect.height;
+    let x=Math.random()*maxX-btnRect.left;
+    let y=Math.random()*maxY-btnRect.top;
+    noBtn.style.transform=`translate(${x}px,${y}px)`;
+
+    const msg=noMessages[noCount%noMessages.length];
+    if(!document.getElementById("noMsg")){
+        const p=document.createElement("p");
+        p.id="noMsg";
+        p.style.marginTop="10px";
+        document.getElementById("card").appendChild(p);
+    }
+    document.getElementById("noMsg").innerText=msg;
+    noCount++;
+}
+
+/* Floating hearts */
+function createHeart(){
+    const heart=document.createElement("div");
+    heart.classList.add("floating-heart");
+    heart.innerHTML="❤️";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(4+Math.random()*3)+"s";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),7000);
+}
+
+/* Fireworks */
+function createFireworks(){
+    for(let i=0;i<100;i++){
+        const f=document.createElement("div");
+        f.classList.add("firework");
+        f.style.backgroundColor=`hsl(${Math.random()*360},100%,70%)`;
+        f.style.left=Math.random()*window.innerWidth+"px";
+        f.style.top=Math.random()*window.innerHeight+"px";
+        document.body.appendChild(f);
+        let dx=(Math.random()-0.5)*20;
+        let dy=(Math.random()-0.5)*20;
+        let life=0;
+        const interval=setInterval(()=>{
+            const top=parseFloat(f.style.top);
+            const left=parseFloat(f.style.left);
+            f.style.top=(top+dy)+"px";
+            f.style.left=(left+dx)+"px";
+            life++;
+            if(life>20){ clearInterval(interval); f.remove(); }
+        },50);
+    }
+}
+</script>
 </body>
 </html>
